@@ -1,12 +1,12 @@
-# Fast Vallet
+# Fast Paymax
 ---
 
-![image](https://user-images.githubusercontent.com/63351166/215289526-4aedba3b-86ed-480a-8d5d-d328e7520ebf.png)
+![image](https://user-images.githubusercontent.com/63351166/215289937-b27e1a25-5eaa-473c-bef0-bb9e1136182f.png)
 
 # Örnek Kullanımı
 
 ```
-const vallet = require('fast-vallet');
+const paymax = require('fast-paymax');
 
 const data = {
     referer: 'localhost', // Referer Domain example.com
@@ -36,7 +36,7 @@ const data = {
     callbackFailUrl: 'http://localhost/callbackFailUrl',
 };
 
-vallet.createPaymentLink(data, (err, res) => {
+paymax.createPaymentLink(data, (err, res) => {
     console.log(err, res);
 });
 
